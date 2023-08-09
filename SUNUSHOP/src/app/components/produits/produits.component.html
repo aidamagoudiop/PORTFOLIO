@@ -1,0 +1,1048 @@
+<!-- <script>
+    var produitInfo = document.querySelector('.produit-info');
+    var produitBtns = document.querySelector('.produit-btns');
+    var addToCart = document.querySelector('.add-to-cart');
+
+    produitInfo.addEventListener('mouseenter', function() {
+        produitBtns.classList.remove('hide');
+        addToCart.classList.remove('hide');
+    });
+
+    produitInfo.addEventLisf333rtener('mouseleave', function() {
+        produitBtns.classList.add('hide');
+        addToCart.classList.add('hide');
+    });
+</script> -->
+<!-- Ce code JavaScript utilise les événements "mouseenter" et "mouseleave" pour détecter quand la souris entre et quitte la zone de "produit-info". Lorsque la souris entre, les classes "hide" sont supprimées des éléments "produit-btns" et "add-to-cart", les affichant ainsi. Lorsque la souris quitte, les classes "hide" sont ajoutées pour les masquer à nouveau.
+
+Avec ces modifications, les éléments "produit-btns" et "add-to-cart" seront cachés par défaut et ne s'afficheront que lorsque la souris est placée sur la zone "produit-info". -->
+
+<script>
+    var addToWishlist = document.querySelector('.add-to-wishlist ');
+    var addToCompare = document.querySelector('.add-to-compare ');
+    var quickView = document.querySelector('.quick-view ');
+    var addToCart = document.querySelector('.add-to-cart-btn');
+
+    var wishlistText = addToWishlist.querySelector('.tooltipp');
+    var compareText = addToCompare.querySelector('.tooltipp');
+    var quickViewText = quickView.querySelector('.tooltipp');
+    var addToCartText = addToCart.querySelector('.tooltipp');
+
+    addToWishlist.addEventListener('mouseover', function() {
+        wishlistText.classList.remove('hide');
+    });
+    addToWishlist.addEventListener('mouseout', function() {
+        wishlistText.classList.add('hide');
+    });
+
+    addToCompare.addEventListener('mouseover', function() {
+        compareText.classList.remove('hide');
+    });
+    addToCompare.addEventListener('mouseout', function() {
+        compareText.classList.add('hide');
+    });
+
+    quickView.addEventListener('mouseover', function() {
+        quickViewText.classList.remove('hide');
+    });
+    quickView.addEventListener('mouseout', function() {
+        quickViewText.classList.add('hide');
+    });
+
+    addToCart.addEventListener('mouseover', function() {
+        addToCartText.classList.remove('hide');
+    });
+    addToCart.addEventListener('mouseout', function() {
+        addToCartText.classList.add('hide');
+    });
+
+
+</script>
+
+
+
+
+
+
+
+<div class="forme-globale">
+
+    <div class="forme-produits">
+        <div class="col-md-3 col-xs-6">
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/RougeVersace.jpg" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">Rouge_Versace</a></h3>
+                        <h4 class="produit-price" >13 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+        
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/christian_Dior1.png" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">Christian_Dior</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            </div>
+        
+                
+                    <!-- <p>{{{Produit.name}}}</p > -->
+                    <!-- <div (click)="gestionnaire()" class="acheter">
+                        acheter
+                        <ng-container *ngIf="Produit.etatProduit">
+                            acheter
+                        </ng-container>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/LV1.png" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">Louis_Vuiton</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/versace1.png" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">Versace</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+    
+    
+    
+    <div class="forme-produits">
+        <div class="col-md-3 col-xs-6">
+            
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-doree3.jpeg" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">Sac_Doree</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-noir3.jpeg" alt="image produit"> 
+
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">sac_noir</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-orange1.jpg" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">sac_orange</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-meuve1.jpeg" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">sac_meuve</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="forme-produits">
+        <div class="col-md-3 col-xs-6">
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-marron.jpeg" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">sac_marron</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-doree2.jpeg" alt="image produit"> 
+
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">sac_doree</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-noir2.jpeg" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">sac_noir</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-doree4.jpeg" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">versace</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="forme-produits">
+        <div class="col-md-3 col-xs-6">
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/RougeVersace.jpg" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">Rouge_Versace</a></h3>
+                        <h4 class="produit-price" >13 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+        
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/christian_Dior1.png" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">Christian_Dior</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            </div>
+        
+                
+                    <!-- <p>{{{Produit.name}}}</p > -->
+                    <!-- <div (click)="gestionnaire()" class="acheter">
+                        acheter
+                        <ng-container *ngIf="Produit.etatProduit">
+                            acheter
+                        </ng-container>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/LV1.png" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">Louis_Vuiton</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/versace1.png" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">Versace</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+    <!---------------------------------------------- CHAUSSURES ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    
+    <div class="forme-produits">
+        <div class="col-md-3 col-xs-6">
+            
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-doree3.jpeg" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">Sac_Doree</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-noir3.jpeg" alt="image produit"> 
+
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">sac_noir</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-orange1.jpg" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">sac_orange</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-meuve1.jpeg" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">sac_meuve</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="forme-produits">
+        <div class="col-md-3 col-xs-6">
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-marron.jpeg" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">sac_marron</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-doree2.jpeg" alt="image produit"> 
+
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">sac_doree</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-noir2.jpeg" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">sac_noir</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+
+
+            <div class="produits">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus, fuga repellat eveniet cum sapiente cupiditate molestiae doloribus reprehenderit voluptatibus labore iusto eum, excepturi quam nobis sint mollitia porro animi! Nihil, ipsum dignissimos? -->
+                <img src="../../assets/sac-doree4.jpeg" alt="image produit"> 
+                
+                <div class="produit-label">
+                    <span class="sale">-30%</span>
+                </div>
+
+                <div class="produit-info">
+
+                    <!-- <p>{{Produit.name}}</p> -->
+
+                        <p class="produit-category">CATEGORIE</p>
+                        <h3 class="produit-name"><a href="#">versace</a></h3>
+                        <h4 class="produit-price" >10 000 FCFA <del class="product-old-price">13 600 FCFA</del></h4>
+                        <div class="produit-rating">
+                            <div class="trait-horizontal gauche"></div>
+                            <div class="etoiles">
+                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                            <div class="trait-horizontal droite"></div>
+                          
+                        </div>
+                        
+
+                        <div class="produit-btns ">
+                            <button class="add-to-wishlist"><i class="fas fa-heart"></i><span class="tooltipp">ajouter aux souhaits</span></button>
+                            <button class="add-to-compare"><i class="fas fa-exchange-alt"></i><span class="tooltipp">ajouter aux comparaisons</span></button>
+                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp ">voir apercu</span></button>
+                        </div>
+                        <div class="add-to-cart hide">
+                            <button class="add-to-cart-btn hide"><i class="fa fa-shopping-cart "></i> AJOUTER AU PANIER</button>
+                        </div>
+                </div>
+            
+            </div>
+        </div>
+    
+    
+    </div>
+
+
+</div>
+
+
+        

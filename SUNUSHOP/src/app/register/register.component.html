@@ -1,0 +1,33 @@
+<body>
+    
+    
+    <div class="forme-nav">
+
+        <div class="contenu-nav">
+
+            <div (click)="redirecTo('login')" class="btn-all">
+                Connexion
+            </div>
+            <div class="btn-all">
+                Inscription
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1>S'inscrire</h1>
+        <div class="register-content">
+
+            <input type="text" [(ngModel)]="email" name="email" placeholder="Email">
+            <input type="password" [(ngModel)]="password" name="password" placeholder="Mot De Pass">
+
+            <div (click)="redirecToHome()" class="btn-all">
+                INSCRIPTION
+            </div>
+        </div>
+    </div>
+
+</body>

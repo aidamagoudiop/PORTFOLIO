@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equip="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+    
+    <title>TO DO LIST</title>
+</head>
+<body>
+
+    <header>
+
+        <h1>Liste de Tâches 2022</h1>
+
+        <form id="New-task">
+            <input 
+                type="text" 
+                id="New-task-input"
+                placeholder="Qu'as tu plannifié ?"
+            />
+            <input 
+                type="submit" 
+                id="New-task-bouton"
+                value="Nouvelle Tâche"
+            />
+        </form>
+
+    </header>
+
+    <main>
+        <form class="task-list">
+
+            <h3>Tâches</h3>
+
+            <div id="taches">
+
+                <div class="tache">
+
+                    <div class="contenu"><!--content-->
+                        <input 
+                            type="text"
+                            value="ma tâche" 
+                            class="text"
+                            readonly
+                        />
+                    </div>
+
+                    <div class="boutons"><!--actions-->
+                        <button class="Enregistrer">Enregistrer</button>
+                        <button class="Supp">Supp</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+    </main>
+    <script src="JS.js"></script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    // background-color: rgb(255, 252, 252);  
+}
+i{
+    color: rgb(165, 55, 73);
+    font-size: 1.2em;
+}
+body{
+    }
+.navibar{
+    z-index: 200;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background:white;
+    padding: 10px 5px;
+    font-size: 1.1em;
+}
+.phts{
+    width: 200px;
+    height: 100px;
+    margin-right: 200px;
+    margin-left: 20px;
+}
+.navibar .navbar{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    // width: 900px;
+    width: 100%;
+    margin-left: 50px;
+    padding: 0 0px;
+    margin-top: 0px;
+    color: rgb(165, 55, 73);
+    cursor: pointer;
+}
+.navibar .navbar:hover{
+    color: rgb(79, 17, 28);
+}
+.navibar .navbar li{
+    display: inline-block;
+    margin: 0 11px;
+    
+}
+// .navibar .navbar li:hover{
+//     background-color: #333;  
+//     padding: 20px;
+// }
+
+.navibar .navbar .lien{
+    margin-left: 20px;
+}
+.nav{
+    color: rgb(95, 93, 93);
+    transition: color 0.3 ease;
+    padding-left: 5px;
+}
+.nav:hover{
+    color: rgb(165, 55, 73);
+}
+#searchbar{
+    position:relative; 
+    width:1040px; 
+    height:auto;
+    padding-top: 30px;
+}
+.formulaire               {display:inline-block;}
+.formulaire .champ       {width:600px; height:35px;
+                            border-radius: 10px;
+}
+.formulaire .bouton       { 
+    // background-image: url(images/searchbar_button.png);
+    background-color: rgba(231, 245, 195, 0.753);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 37px;
+    padding: 0;
+    border-radius: 10px;
+ }
+ .panier{
+    display: flex;
+    padding-top: 20px;
+    // background: rgb(241, 70, 104);
+    
+
+}
+
+
+
+
+
+.nava{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 25px;
+    width: 100%;
+}
+.autrelien{
+    margin-left: 130px;
+    display: flex;
+    padding-top: 15px;
+}
+.autrelien li{
+    padding-right: 60px;
+}
+.autrelien li a{
+    color: black;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.autrelien li a:hover{
+    color: rgb(165, 55, 73);
+}
+.retrouver{
+    background: rgb(165, 55, 73);
+    padding-left: 25px;
+    padding-right: 120px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+    border-radius: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.retrouver i{
+    color: white;
+    margin: 0 15px;
+    font-size: 1.1em;
+    
+}
+.retrouver a{
+    color: white;
+    
+}
+
+/*****************************************************************************************/
+
+.noussa{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+.diop{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.presentation{
+    display: flex;
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+.terre{
+    margin-right: 35px;
+    margin-top: 35px;
+    font-size: 18px;
+}
+.terrew{
+    margin-top: 15px;
+    font-size: 18px;
+}
+.terrea{
+    margin-top: 35px;
+    margin-right: 45px;
+    font-size: 18px;
+}
+.terrew h4{
+    text-align: center;
+    border: 1px solid gainsboro;
+    padding: 10px 10px;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: color 0.3 ease;
+    background: plum;
+}
+.terrew h4:hover{
+    background: powderblue;
+}
+.ssd{
+    border: 1px solid gainsboro;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+}
+.A31 h1{
+    text-align: center;
+}
+.A32{
+    border: 1px solid gainsboro;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    transition: color 0.3 ease;
+    background: plum;
+    
+}
+.A33{
+    border: 1px solid gainsboro;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    transition: color 0.3 ease;
+    background: plum;
+}
+.A34{
+    border: 1px solid gainsboro;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    transition: color 0.3 ease;
+    background: plum;
+}
+.A32:hover{
+    background: powderblue;
+}
+.A33:hover{
+    background: powderblue;
+}
+.A34:hover{
+    background: powderblue;
+}
+.reseau{
+    display: flex;
+    margin-left: 90px;
+    margin-bottom: 80px;
+}
+.dame{
+    margin-right: 50px;
+}
+.dame p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.seck{
+    margin-top: 10px;
+}
+.seck li{
+    list-style-type: circle;
+    font-size: 18px;
+    margin-top: 10px;
+}
+/* ************************************************************************************ */
+
+.calque{
+    font-size: 60px;
+    
+}
+.taille .fas{
+    font-size: 3em;
+}
+.taille {
+    font-size: 1.4em;
+    font-weight: 500;
+    width: 50%;
+}
+.taille span{
+    margin-left: 10px;
+    font-size: 1em;
+    font-weight: 510;
+}
+.tailled{
+    margin-top: 15px;
+    // margin-left: -60px;
+    
+}
+.touba{
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.secpol{
+    background-color: gainsboro;
+    width: 100%;
+    padding: 50px;
+   
+}
+.sec{
+    display: flex;
+    margin-left: 80px;
+    padding-top: -40px;
+    
+}
+.rien{
+    margin-right: 250px;
+    margin-top: 70px;
+    
+}
+.sec1{
+    margin-right: 90px;
+    background-color: gainsboro;
+
+}
+.rien23{
+    padding-bottom: 45px;
+}
+/******************************************************************************************/
+.sall{
+    margin-right: 560px;
+    margin-left: 20px;
+    /* padding-bottom: 40px; */
+    font-size: 18px;
+}
+.paiement{
+    background: gray;
+}
+/********************************************************************/
+.textetform{
+    margin-bottom: 10px;
+    color: #333;
+}
+.bayern{
+    display: flex;
+    margin-left: 100px;
+
+}
+.bayern address{
+    color: rgb(74, 25, 33);
+}
+.bayern h2{
+    color: rgb(165, 55, 73);
+}
+.bayern h4{
+    color: rgb(165, 55, 73);
+}
+.case{
+    width: 230px;
+    height: 35px;
+    border-radius: 40px;
+}
+.formulaire{
+    margin-left: 180px;
+    // margin: auto auto 30px;
+    box-shadow: 2px 2px 2px 6px rgb(183, 62, 82);
+    
+}
+.formulaire-container{
+    margin: 10px 20px 40px;
+}
+.formulaire-container label{
+    font-size: 1.3em;
+}
+.formulaire-container input{
+    font-size: 1em;
+}
+.ney li{
+    font-size: 25px;
+}
+.cases{
+    width: 500px;
+    height: 35px;
+    border-radius: 40px;
+    
+}
+.casess{
+    border-radius: 40px;
+    
+}
+.envoyer{
+    font-size: 20px;
+    // font-weight: 500;
+    border: 3px solid rgb(16, 16, 16);
+    background: rgb(183, 62, 82);
+    color: whitesmoke;
+    border-radius: 15px;
+    padding: 15px 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.envoyer:hover{
+    font-size: 20px;
+    font-weight: 600;
+    background: whitesmoke;
+    color: rgb(183, 62, 82);
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 15px 20px;
+    
+}

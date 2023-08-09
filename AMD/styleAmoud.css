@@ -1,0 +1,174 @@
+.{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    
+}
+
+section{
+    padding: 100px;
+    max-width: 100%;
+}
+
+p{
+    font-size: 1.4em;
+    color: #111;
+}
+
+.logo{
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    color: beige; 
+    margin-left: -120px;
+
+}
+
+.logo span{
+    font-size: 1em;
+    font-weight: 700;
+    color: rgb(221, 133, 234); 
+
+}
+h2{
+    color: black; 
+}
+
+header{
+    position: fixed;   /* pour que ca bouge tout le long de la page */
+    top: 0%;
+    left: 0%;
+    padding: 20px 50px;
+    width: 100%;
+    z-index: 1;
+    display: flex; /* pour que l'en tete soit sous forme de ligne */ 
+    justify-content: space-evenly; /* distance entre le logo et les ul */
+    align-items: center; /* le logo soit au centre par rapport aux ul */
+    transform: 0.5s;
+    background-color: rgb(12, 12, 13);
+    max-width: 100%;
+}
+.navbar{
+    display: flex;
+}
+.navbar li{
+    list-style: none; /* disparission des points ou carrés etc */
+    justify-content: space-between;
+    color: whitesmoke;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    cursor:pointer;
+    transition: 0.4s;
+    margin-left: 30px;
+    font-weight: 700;
+}
+.navbar a .btn1{
+    color: rgb(221, 133, 234);
+}
+.btn-reserve:hover{
+    background: rgb(221, 133, 234);
+    transition: ease-out;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+}
+
+header .navbar li a:hover{
+    color: rgb(221, 133, 234);
+    border-bottom: 2px solid rgb(221, 133, 234);
+}
+
+.acceuil{
+    background-image: url();
+}
+
+
+.contact{
+    background-image: url(images/im10.webp);
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(168, 58, 154, 0.8);
+    width: 100%;
+    background-position: unset;
+}
+
+.contact .titre-text span{
+    color: rgb(221, 133, 234);
+    font-size: 2em;
+}
+
+.titre-noir .titre-texte{
+    margin-left: 38%;
+    top: 0;
+}
+
+.titre-noir h2{
+    margin-left: 52%;
+    font-size: 3em;
+
+}
+
+.titre-noir p{
+    color: rgb(36, 35, 34);
+    font-size: 1.4em;
+    margin-top: -22px;
+    justify-content: center;
+    margin-left: 20%;
+
+}
+
+.contactform{
+    padding: 75px 50px;
+    background: rgba(153, 150, 153, 0.8);
+    box-shadow: 5px 15px 50px rgba(0,0,0,0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+}
+
+.contactform .inputboite {
+    position: relative;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.contactform .inputboite input,
+.contactform .inputboite textarea{
+    width: 100%;
+    border: 1px solid rgba(250, 245, 245, 0.483);
+    padding: 10px;
+    color: #111; 
+    outline: none;
+    font-size: 16px ;
+    font-weight: 300;
+    resize:none;
+
+}
+
+.contactform .inputboite input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+    background: rgb(221, 133, 234);
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase ;
+    text-decoration: ;
+    letter-spacing: 20;
+    outline: none;
+    border-color: #111;
+    border-radius: 10px;
+    transition: 0.4s;
+    max-width: 120px;
+    align-items:center ;
+    justify-content: center;
+    cursor: pointer;
+}

@@ -1,0 +1,177 @@
+
+:root{
+    --dark:#374151;
+    --darker:#1F2937;
+    --darkest:#111827;
+    --light:#EEE;
+    --pink:#EC4899;
+    --purple:#885Cf6;
+
+
+}
+
+.{
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    font-family: 'Fira sans', sans-serif;
+}
+
+body{
+    background-color: rgb(31, 31, 65);
+    display: flex;
+    flex-direction: column;
+    background: var(--dark);
+    min-height: 100vh;
+    color: #FFF;
+}
+
+main{
+    flex:1 1 0%;
+    padding: 2remc1rem ;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+header{
+    padding: 2rem 1rem ;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+.task-list{
+    flex-direction: column;
+    text-align: center;
+}
+
+.task-list h3{
+    font-size: 1.3rem;
+    font-weight: 50;
+    color: rgb(120, 120, 117);
+    margin-bottom: 2rem;
+    margin: 15px 810px 10px 0;
+}
+
+h1{
+    color: rgb(120, 120, 117);
+    margin: 0 81px 0 -435px;
+    margin-bottom: 1rem;
+
+}
+
+input, button{
+    border: none;
+    appearance: none;
+    background: none;
+    outline: none;
+    flex-direction: column;
+    display: flex;
+    max-width: 600px;
+}
+
+
+#New-task{
+    display: flex;
+}
+
+#New-task-bouton{
+    color: var(--pink);
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#New-task-input{
+    flex: 1 1 ;
+    background-color: var(--darker);
+    color: var(--light);
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+#New-task-input::placeholder{
+    color: var(--gray);
+}
+
+#task-list{
+    text-align: center;
+
+}
+
+#taches .tache{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darker);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#taches .tache .contenu .text{
+    color: var(--light);
+    font-size: 1.145rem;
+    border-radius: 1rem;
+    display: block;
+    width: 100%;
+    transition: 0.4s;
+}
+
+#taches .tache .contenu .text:not(:read-only){
+    color: var(--pink);
+}
+
+#taches .tache .boutons{
+    display: flex;
+    margin: 0 0 0 150px;
+}
+
+.tache .boutons button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.140rem;
+    font-weight: 70;
+    text-transform: lowercase;
+    transition: 0.2s;
+}
+
+.tache .boutons button:hover{
+    opacity: 0.8;
+}
+
+.tache .boutons button:active{
+    opacity: 0.6;
+}
+
+.tache .boutons .Enregistrer{
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 -145px 0 15px;
+
+}
+
+.tache .boutons .Supp{
+    color:crimson;
+    margin: 0 0 0 150px;
+}
+
+#taches{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 750px;
+
+}
+
+
+.boutons{
+    color: rgb(133, 18, 64);
+
+}
+
+
+
